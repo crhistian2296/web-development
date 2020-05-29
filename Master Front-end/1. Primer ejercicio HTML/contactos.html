@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contactos</title>
+    <meta name="description" content="aprendiendo html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="">-->
+</head>
+
+<body>
+    <!--Encabezado-->
+    <h1>Contactos del primer ejercicio</h1>
+
+    <!--Menu-->
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="contenidos.html">Contenido</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+    </ul>
+
+    <hr>
+
+    <!--Contenido delIndex-->
+    <h2>Bienvenido a mi website</h2>
+    <section>
+        <form name="Mi formulario" autocomplete="off">
+            <p>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" name="nombre">
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </p>
+
+            <p>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" min="15" max="80">
+            </p>
+
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" pattern="[0-9]{10}">
+                <!--pattern me limita la forma de escribir un telefono-->
+            </p>
+
+            <p>
+                <label for="genero">Genero</label>
+                <select name="genero">
+                   <option value="hombre">Masculino</option>
+                   <option value="mujer">Femenino</option>
+                   <option value="transformer">Otro</option>
+                </select>
+            </p>
+
+            <p>
+                Apariencia:<br>
+                <input type="radio" name="color de ojos" value="claro">Ojos claros<br>
+                <input type="radio" name="color de ojos" value="oscuros">Ojos oscuros<br>
+                <input type="radio" name="contextura" value="atletico">Atletico<br>
+                <input type="radio" name="contextura" value="gordo">Gordo<br>
+                <input type="radio" name="contextura" value="flaco">Flaco<br>
+                <input type="radio" name="habilidad" value="diestro">Diestro<br>
+                <input type="radio" name="habilidad" value="zurdo">Zurdo<br>
+            </p>
+
+            <p>
+                <input type="submit" value="enviar formulario">
+            </p>
+        </form>
+    </section>
+</body>
+
+</html>
