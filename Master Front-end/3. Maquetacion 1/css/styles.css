@@ -1,0 +1,43 @@
+/*Google fonts: 'Roboto'*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+body {
+    background-image: url("../img/paven.png");
+}
+
+#cabecera {
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#cabecera a {
+    text-decoration: none;
+    color: #70b231;
+}
+
+#cabecera #logo {
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+#cabecera #logo img {
+    display: block;
+    margin: auto;
+    width: 140px;
+}
+
+#logo h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 1px #333333;
+    transition: all 300ms;
+}
+#logo h1:hover {
+    text-shadow: 2px 2px 1px #333333, 0px 0px 5px #70b231;
+}

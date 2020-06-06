@@ -28,3 +28,46 @@
     background-color: darkorange;
     border: 2px dotted rgb(233, 128, 1);
 }
+
+#caja {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: rgb(221, 97, 97);
+    color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 230px;
+    animation-name: desplazamiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/*
+@keyframes desplazamiento {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 800px;
+    }
+}
+*/
+
+@keyframes desplazamiento {
+    0% {
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        margin-left: 800px;
+        transform: rotate(360deg);
+    }
+    100% {
+        margin-left: 0;
+        transform: rotate(720deg);
+    }
+}
