@@ -9,12 +9,7 @@ body {
 /*MODIFICACION GENERAL A LINKS*/
 a {
   text-decoration: none;
-  color: rgb(17, 131, 17);
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgb(0, 71, 0);
+  color: rgb(19, 153, 19);
 }
 
 a:hover {
@@ -211,6 +206,7 @@ button:active {
   margin-top: 10px;
   width: 190px;
   padding: 10px;
+  float: left;
 }
 
 #aside .widget {
@@ -272,16 +268,6 @@ button:active {
 #aside .widget input[type="button"],
 #aside .widget button {
   margin: 5px 0 10px 0;
-}
-
-#aside .widget a {
-  color: #70b231;
-}
-#aside .widget a:visited {
-  color: darkgreen;
-}
-#aside .widget a:hover {
-  color: #47751c;
 }
 
 #aside .widget label {
