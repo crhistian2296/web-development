@@ -1,6 +1,5 @@
-/*Google fonts: 'Roboto'y 'Source Sans Pro'*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro&display=swap");
-
+/*Google fonts: 'Pasion One' 'Roboto'y 'Source Sans Pro'*/
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@900&family=Source+Sans+Pro&display=swap");
 /*FONDO*/
 body {
   background-image: url("../img/paven.png");
@@ -195,7 +194,8 @@ button:active {
   clear: both;
   width: 210px;
   float: left;
-  margin: 30px;
+  margin: 20px;
+  margin-top: 0;
   background-color: white;
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
@@ -244,7 +244,7 @@ button:active {
 }
 
 #aside #virtual1 h3 {
-  color: rgb(39, 111, 134);
+  color: rgb(50, 144, 175);
 }
 
 #aside #virtual2 h3 {
@@ -272,4 +272,41 @@ button:active {
 
 #aside .widget label {
   text-align: center;
+}
+
+/*SECTIONS*/
+#secciones {
+  width: 75%;
+  margin-left: 290px;
+  font-family: "Source Sans Pro";
+}
+
+#secciones .titulo {
+  font-family: "Pasion One";
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#secciones section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  padding-top: 45px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px #c9c9c9;
+  color: #333333;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#secciones .articulo {
+  margin: 20px 10px 20px 10px;
+}
+
+#secciones .date,
+#secciones .author {
+  color: gray;
+  font-size: 14px;
 }
