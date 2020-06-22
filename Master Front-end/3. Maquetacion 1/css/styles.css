@@ -345,3 +345,24 @@ button:active {
   color: rgb(114, 114, 114);
   margin-right: 1px;
 }
+
+/*HISTORICO*/
+#historico {
+  float: right;
+  margin: 20px 76px 20px 20px;
+  font-size: 18px;
+}
+
+/*FOOTER*/
+#footer {
+  font-family: "Source Sans Pro";
+  text-align: center;
+  margin: 5px 0 5px 0;
+  padding: 10px 0 10px 0;
+  background-color: #333333;
+  color: #ececec;
+}
+
+#footer p {
+  margin: 0;
+}
