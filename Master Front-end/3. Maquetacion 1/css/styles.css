@@ -283,9 +283,11 @@ button:active {
 
 #secciones .titulo {
   font-family: "Pasion One";
-  letter-spacing: 1px;
+  margin-top: 0;
+  font-size: 28px;
+  letter-spacing: 0.5px;
   text-align: center;
-  padding: 20px 0 10px 0;
+  padding: 10px 0 10px 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -293,7 +295,7 @@ button:active {
   margin-top: 40px;
   background-color: white;
   padding: 20px;
-  padding-top: 45px;
+  padding-top: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 0 4px #c9c9c9;
   color: #333333;
@@ -309,4 +311,37 @@ button:active {
 #secciones .author {
   color: gray;
   font-size: 14px;
+}
+
+/*AJUSTE DE FIXOS/CELO*/
+.sticker__1 {
+  position: absolute;
+  margin-top: -28px;
+  z-index: 1;
+}
+
+.sticker__2 {
+  position: absolute;
+  margin-top: -28px;
+  margin-left: 860px;
+  z-index: 1;
+}
+
+/*COLOR DE LOS TITULOS DE LAS NOTICIAS*/
+.titulo__1 {
+  color: rgb(15, 15, 15);
+}
+
+.titulo__2 {
+  color: #e2aa2a;
+}
+
+.titulo__3 {
+  color: rgb(161, 54, 54);
+}
+
+/*AJUSTES AL ICONO DE ARCHIVO*/
+.icono {
+  color: rgb(114, 114, 114);
+  margin-right: 1px;
 }
