@@ -1,0 +1,53 @@
+#container {
+  width: 70%px;
+  background-color: rgb(245, 158, 158);
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: lightskyblue;
+  color: #333;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+
+aside {
+  width: 25%;
+  height: 700px;
+  background-color: aliceblue;
+  margin-right: 0;
+  float: left;
+  line-height: 650px;
+}
+aside h2 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+#articles {
+  float: left;
+  height: 700px;
+  width: 75%;
+  background-color: beige;
+}
+
+#articles article {
+  float: left;
+  height: 95px;
+  width: 25%;
+  margin: 2%;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.floatfixer {
+  float: none;
+  clear: both;
+}
