@@ -58,6 +58,8 @@ footer h2 {
 }
 
 /*RESPONSIVE*/
+
+/*TABLET*/
 @media (max-width: 850px) {
   #articles article {
     width: 35%;
@@ -65,6 +67,7 @@ footer h2 {
   }
 }
 
+/*MOBILE*/
 @media (max-width: 500px) {
   #articles article {
     width: 80%;
