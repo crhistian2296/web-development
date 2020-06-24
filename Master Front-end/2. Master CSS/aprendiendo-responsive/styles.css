@@ -36,7 +36,7 @@ aside h2 {
 
 #articles article {
   float: left;
-  height: 95px;
+  height: 15%;
   width: 25%;
   margin: 2%;
   background-color: lightgreen;
@@ -47,7 +47,36 @@ footer {
   text-align: center;
 }
 
+footer h2 {
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+
 .floatfixer {
   float: none;
   clear: both;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 850px) {
+  #articles article {
+    width: 35%;
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 500px) {
+  #articles article {
+    width: 80%;
+    height: 54px;
+    background-color: rgb(74, 55, 180);
+  }
+  #container {
+    font-size: 0.5em;
+  }
+
+  aside,
+  #articles {
+    height: 600px;
+  }
 }
