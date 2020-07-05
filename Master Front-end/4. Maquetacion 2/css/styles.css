@@ -1,0 +1,140 @@
+/*FUENTES*/
+/*googlefonts: "Bebas Neue"*/
+
+/*FORMATEO*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*ESTILOS GENERALES*/
+body {
+  background-image: url(../img/pattern.png);
+}
+#wrap {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/*CABECERA*/
+#header {
+  width: 100%;
+  height: 72px;
+  background-color: black;
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+}
+
+#logo {
+  width: 200px;
+  height: 56px;
+  margin-top: 8px;
+  margin-left: 7%;
+  float: left;
+  background-color: #37bcf9;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#logo #gear {
+  float: left;
+  line-height: 1.9em;
+  margin-left: 25px;
+}
+#logo h3 {
+  line-height: 1.6em;
+  margin-right: 52px;
+}
+
+#menu {
+  float: right;
+  margin-right: 16%;
+  background-color: transparent;
+}
+
+#menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 74px;
+}
+#menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  transition: all 200ms;
+}
+
+#menu li a:hover {
+  transform: scale(1.2, 1.2);
+  color: #37bcf9;
+}
+
+/*BANNER*/
+#banner {
+  width: 85%;
+  height: 100px;
+  border: 10px solid white;
+  box-shadow: 0 0 2px gray;
+  margin: 20px auto;
+  background-image: url(../img/blue-pattern-2.jpeg);
+  background-position: -30px 200px;
+}
+
+#banner h1 {
+  display: block;
+  margin: 27px auto;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 570;
+  text-shadow: 1px 2px 2px black;
+  color: white;
+}
+
+/*TARJETAS*/
+.deck {
+  width: 95%;
+  height: 355px;
+  margin: 55px auto;
+  margin-bottom: 20px;
+  padding-left: 44px;
+}
+.card {
+  width: 205px;
+  height: 280px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+  background-color: white;
+  float: left;
+  margin: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Roboto Slab";
+}
+.card__icon-container {
+  width: 100%;
+}
+.card__icon {
+  margin-top: 30px;
+  margin-bottom: 65px;
+  font-size: 4em;
+}
+
+.card__category {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00538c;
+}
+
+.card__description {
+  color: #1d7ebe;
+}
