@@ -55,69 +55,122 @@
     </header>
     <!--Fin de la cabecera-->
 
-    <!--Inicio del banner-->
+    
     <section class="wrap">
       <section id="info">
+        <!--Inicio del banner-->
         <div id="banner">
           <h1>
             CURSO DE DESARROLLO WEB LLEVADO DE MANERA AUTODIDACTA ASISTIDA
           </h1>
         </div>
-      </section>
+        <!--Fin del banner-->
+
+        <!--Inicio tarjetas-->
+        <div class="deck">
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-laptop-code"></i>
+            </p>
+            <h2 class="card__category">Desarrollo web</h2>
+            <p class="card__description">
+              Aprende los principales lenguajes para desarrollar webs y
+              conviértete en un web master.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <div class="card__icon--background">
+                  <i class="card__icon--terminal fas fa-terminal"></i>
+              </div>
+              
+            </p>
+            <h2 class="card__category">Sistemas Operativos</h2>
+            <p class="card__description">
+              Aprende a administrar sistemas linux y windows.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-cog"></i>
+            </p>
+            <h2 class="card__category">Hardware</h2>
+            <p class="card__description">Descubre los secretos del hardware.</p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-network-wired"></i>
+            </p>
+            <h2 class="card__category">Redes e Internet</h2>
+            <p class="card__description">
+              Aprende a configurar y administrar redes informáticas y servidores.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-database"></i>
+            </p>
+            <h2 class="card__category">Bases de Datos</h2>
+            <p class="card__description">
+              Aprende a crear y administrar bases de datos.
+            </p>
+          </div>
+        </section>
+        <!--Fin tarjetas-->
+      </div>
     </section>
-    <!--Fin del banner-->
 
-    <!--Inicio tarjetas-->
-    <div class="deck">
-      <div class="card">
-        <p class="card__icon-container">
-          <i class="card__icon fas fa-laptop-code"></i>
-        </p>
-        <h2 class="card__category">Desarrollo web</h2>
-        <p class="card__description">
-          Aprende los principales lenguajes para desarrollar webs y conviértete
-          en un web master.
-        </p>
+    <!--Ininio barra lateral-->
+    <aside id="aside">
+      <div class="zone search__zone">
+        <h3>BUSCAR</h3>
+        <form>
+          <input type="text" placeholder="Search" class="text__search">
+          <div class="search__button">
+            <a href="#">
+              <i class="search__icon fas fa-search"></i>
+            </a>
+          </div>
+        </form>
       </div>
 
-      <div class="card">
-        <p class="card__icon-container">
-          <i class="card__icon fas fa-terminal"></i>
-        </p>
-        <h2 class="card__category">Sistemas Operativos</h2>
-        <p class="card__description">
-          Aprende a administrar sistemas linux y windows.
-        </p>
+      <div class="clear-fixer"></div>
+
+      <div class="zone loggin--zone">
+        <h3> USER</h3>
+        <form>
+          <label id="user"><i class="fas fa-user"></i></label>
+          <input type="email" placeholder="Email">
+
+          <label id="password"><i class="fas fa-unlock"></i></label>
+          <input type="password" placeholder="Contraseña">
+
+          <!--botones-->
+          <input type="submit" value="Entrar">
+          <input type="reset" value="Limpiar">
+
+          <!--links-->
+          <a href="#">Registrate aqui</a>
+          <a href="#">Has olvidado tu contraseña?</a>
+        </form>
       </div>
 
-      <div class="card">
-        <p class="card__icon-container">
-          <i class="card__icon fas fa-cog"></i>
-        </p>
-        <h2 class="card__category">Hardware</h2>
-        <p class="card__description">Descubre los secretos del hardware.</p>
+      <div class="zone social__zone">
+        <h3>REDES SOCIALES</h3>
+        <span id="twitter"><i class="fab fa-twitter"></i></span>
+        <span id="g+"><i class="fab fa-google-plus-g"></i></span>
+        <span id="facebook"><i class="fab fa-facebook"></i></span>
+        <span id="youtube"><i class="fab fa-youtube"></i></span>
       </div>
 
-      <div class="card">
-        <p class="card__icon-container">
-          <i class="card__icon fas fa-network-wired"></i>
-        </p>
-        <h2 class="card__category">Redes e Internet</h2>
-        <p class="card__description">
-          Aprende a configurar y administrar redes informáticas y servidores.
-        </p>
+      <div class="zone sponsor-zone">
+        <h3>PATROCINADORES</h3>
       </div>
-
-      <div class="card">
-        <p class="card__icon-container">
-          <i class="card__icon fas fa-database"></i>
-        </p>
-        <h2 class="card__category">Bases de Datos</h2>
-        <p class="card__description">
-          Aprende a crear y administrar bases de datos.
-        </p>
-      </div>
-    </div>
-    <!--Fin tarjetas-->
+    </aside>
+    <!--Fin Barra lateral-->
   </body>
 </html>

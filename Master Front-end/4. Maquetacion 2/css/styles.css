@@ -15,6 +15,10 @@ body {
   width: 1200px;
   margin: 0px auto;
 }
+.clear-fixer {
+  float: none;
+  clear: both;
+}
 
 /*CABECERA*/
 #header {
@@ -127,6 +131,22 @@ body {
   font-size: 4em;
 }
 
+.card__icon--background {
+  background-color: black;
+  width: 75px;
+  height: 65px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 65px;
+  border-radius: 0.4em;
+}
+
+.card__icon--terminal {
+  color: white;
+  font-size: 2.5em;
+  margin: 10px auto;
+}
+
 .card__category {
   width: 100%;
   height: 40px;
@@ -137,4 +157,23 @@ body {
 
 .card__description {
   color: #1d7ebe;
+}
+
+.text__search {
+  display: block;
+  float: left;
+}
+
+.search__button {
+  height: 20px;
+  width: 20px;
+  border: 1px solid gray;
+  border-left: transparent;
+  float: left;
+}
+
+.search__button a {
+  display: block;
+  margin-top: 0.1em;
+  margin-left: 0.1em;
 }
