@@ -5,6 +5,11 @@ body {
   background-image: url("../img/paven.png");
 }
 
+h4 {
+  display: inline-block;
+  margin: 0;
+}
+
 /*MODIFICACION GENERAL A LINKS*/
 a {
   text-decoration: none;
@@ -344,6 +349,8 @@ button:active {
 .icono {
   color: rgb(114, 114, 114);
   margin-right: 1px;
+  float: left;
+  margin-right: 3px;
 }
 
 /*HISTORICO*/

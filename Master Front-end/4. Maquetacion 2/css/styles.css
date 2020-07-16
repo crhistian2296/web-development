@@ -1,10 +1,15 @@
 /*FUENTES*/
-/*googlefonts: "Bebas Neue"*/
+/*googlefonts: "Bebas Neue" "Roboto Slab"*/
 
 /*FORMATEO*/
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*ESTILOS GENERALES*/
@@ -105,7 +110,7 @@ body {
 /*TARJETAS*/
 .deck {
   width: 95%;
-  height: 355px;
+  height: 325px;
   margin: 55px auto;
   margin-bottom: 20px;
   padding-left: 44px;
@@ -158,7 +163,7 @@ body {
 .card__description {
   color: #1d7ebe;
 }
-
+/*AJUSTE CAMPO Y LOGO SEARCH*/
 .text__search {
   display: block;
   float: left;
@@ -177,3 +182,287 @@ body {
   margin-top: 0.1em;
   margin-left: 0.1em;
 }
+
+/*BARRA LATERAL*/
+
+#aside {
+  display: block;
+  width: 300px;
+  min-height: 1200px;
+  font-family: "Roboto Slab";
+  float: right;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.titulo {
+  display: block;
+  width: auto;
+  height: 45px;
+  background-image: url(../img/pxgray.png);
+  background-color: white;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 48px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 0px #393d3f,
+              1px 2px 0px #393d3f,
+              2px 3px 0px #393d3f, 
+              3px 3px 0px #393d3f;
+}
+/*SEARCH ZONE*/
+.search__text--container {
+  width: 90%;
+  height: 30px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #ccc inset;
+}
+
+.text__search {
+  width: 225px;
+  height: 26px;
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  color: rgb(61, 61, 61);
+}
+
+.search__button {
+  height: 100%;
+  width: 30px;
+  border: 1px solid gray;
+  border: transparent;
+  border-left: 1px solid #ccc;
+  float: left;
+}
+
+.search__button a {
+  margin-top: 3px;
+  margin-left: 6px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #727272;
+}
+/*LOGIN ZONE*/
+.login__zone--container {
+  width: 270px;
+  height: 198px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px 10px 10px 10px;
+  box-shadow: 2px 2px 6px #ccc,
+              -2px 2px 6px #ccc;
+}
+
+.user__container,
+.password__container {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  width: 268px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login__logo {
+  height: 99%;
+  line-height: 28px;
+  margin-left: 6px;
+  margin-right: 3px;
+}
+
+.login__text {
+  height: 24px;
+  width: 237px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.login__text:focus,
+.text__search:focus {
+  border-color: #00538c;
+}
+
+.login__links--container {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.login__link {
+  font-size: small;
+  color: rgb(109, 109, 109);
+}
+
+.login__link:hover {
+  color: #00538c;
+}
+
+.login__buttons--container {
+  margin: auto;
+  width: 260px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login__button {
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-weight: lighter;
+  font-family: "Roboto Slab";
+  background: linear-gradient(to bottom, #2da1cb 0%, #3193e4 100%);
+  border: 1px solid #156785;
+  transition: all 200ms;
+}
+
+.login__button:hover {
+  box-shadow: 0px 0px 3px gray;
+}
+
+.sponsors__logos {
+  width: 270px;
+  height: 198px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 6px #ccc,
+              -2px 2px 6px #ccc;
+  overflow: hidden;
+  align-items: center;
+}
+
+#apple-logo {
+  position: relative;
+  left: 15px;
+  top: -20px;
+  margin-right: 40px;
+}
+#tesla-logo {
+  position: relative;
+  top: -5px;
+}
+
+#microsoft-logo {
+  position: relative;
+  left: 10px;
+  top: -20px;
+  margin-right: 20px;
+}
+#google-logo {
+  position: relative;
+  top: -15px;
+}
+
+
+.social__logo {
+  font-size: 2em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social__logos--container {
+  width: 230px;
+  height: 60px;
+  margin: auto;
+  line-height: 71px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px #ccc,
+              -2px 2px 6px #ccc;
+}
+
+/*ARTICULOS*/
+.articles {
+  width: 860px;
+  float: right;
+}
+
+.articles-section__title {
+  font-size: 40px;
+  text-align: center;
+  height: 75px;
+  line-height: 82px;
+  margin-bottom: 40px;
+}
+
+.article {
+  width: 94%;
+  padding: 15px 15px 20px 15px;
+  margin: auto;
+  margin-bottom: 40px;
+  height: auto;
+  font-family: "Roboto Slab";
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  letter-spacing: 0.2px;
+  font-weight: lighter;
+  box-shadow: 1px 1px 2px #ddd;
+}
+
+.article p{
+  text-align: justify;
+}
+
+.leer {
+  color: #00538c;
+}
+
+.article__title {
+  margin: 0px 3px 10px 3px;
+  display: block;
+}
+
+.article__title a {
+  font-size: 23px;
+  color: #00538c;
+}
+
+.article__title a:hover {
+  text-decoration: underline;
+}
+
+.article__data {
+  width: 222px;
+  float: right;
+  margin: -15px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px;
+  background-color: #393d3f;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 0 5px;
+}
+
+#blog {
+  margin: auto;
+  height:100px;
+  width: 97.7%;
+  line-height: 105px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bebas Neue";
+  background-color: white;
+  border:1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+}
+
+#blog a {
+  display: block;
+  color: #00538c;
+  }
