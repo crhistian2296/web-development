@@ -46,16 +46,73 @@ body {
   letter-spacing: 1px;
   font-size: 32px;
   cursor: pointer;
+  transition: all 200ms;
+  overflow: hidden;
+}
+
+#logo:hover {
+  border-radius: 2px;
+  color: black;
+  background-color: #ccc;
+}
+/*ENGRANAGE DINAMICO*/
+#logo:hover #gear i {
+  animation: fromBellow 400ms;
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 #logo #gear {
   float: left;
-  line-height: 1.9em;
   margin-left: 25px;
 }
+
+/*ENGRANAGE GIRANDO*/
+#logo #gear i {
+  display: block;
+  margin-top: 13px;
+  animation-name: rotate-gear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+
 #logo h3 {
   line-height: 1.6em;
   margin-right: 52px;
+}
+
+#logo:hover h3 {
+  animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 #menu {
@@ -372,8 +429,9 @@ body {
 }
 
 .social__logos--container {
-  width: 230px;
-  height: 60px;
+  width: 200px;
+  height: 165px;
+  padding: 15px;
   margin: auto;
   line-height: 71px;
   text-align: center;
@@ -381,6 +439,14 @@ body {
   border-radius: 5px;
   box-shadow: 2px 2px 6px #ccc,
               -2px 2px 6px #ccc;
+}
+
+.social__logos--container span {
+  display: block;
+  height: 42px;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 48px;
 }
 
 /*ARTICULOS*/
@@ -466,3 +532,73 @@ body {
   display: block;
   color: #00538c;
   }
+
+/*FOOTER*/
+#footer {
+  width: 100%;
+  height: 470px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+#footer a {
+  color: #37bcf9;
+  transition: all 300ms;
+}
+#footer .wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer .wrap > div {
+  float: left;
+  width: 320px;
+  height: 370px;
+  margin: 40px;
+  text-align: center;
+  font-family: "Roboto Slab";
+}
+
+.footer__title{
+  display: block;
+  background: url(../img/pxgray.png) white;
+  height: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  line-height: 55px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.footer__menu ul {
+  text-align: left;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.footer__menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer__menu ul li a {
+  display: block;
+  height: 1.4em;
+}
+
+#footer #location #map {
+  width: 100%;
+  height: 84%;
+}
+
+#footer #comunication img {
+  margin-bottom: 15px;
+}
+
+#footer #comunication #browsers img {
+  width: 45px;
+}
