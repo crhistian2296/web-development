@@ -150,6 +150,18 @@ body {
   margin: 20px auto;
   background-image: url(../img/blue-pattern-2.jpeg);
   background-position: -30px 200px;
+  overflow: hidden;
+  animation: banner-backgroundMotion 6s linear;
+}
+
+/*BANNER: BACKGROUND ANIMATION*/
+@keyframes banner-backgroundMotion {
+  from {
+    background-position-y: top;
+  }
+  to {
+    background-position-y: bottom;
+  }
 }
 
 #banner h1 {
@@ -162,6 +174,24 @@ body {
   font-weight: 570;
   text-shadow: 1px 2px 2px black;
   color: white;
+  animation: banner-textAnimation 6s linear;
+}
+
+/*BANNER: TEXT ANIMATION*/
+@keyframes banner-textAnimation {
+  0% {
+    transform: translateX(-200%) scale(3, 3);
+    opacity: 0.3;
+  }
+  40% {
+    transform: translateX(200%) scale(3, 3);
+    opacity: 0.3;
+  }
+  80% {
+    transform: translateX(-200%) scale(3, 3);
+    text-shadow: none;
+    opacity: 0.3;
+  }
 }
 
 /*TARJETAS*/
@@ -183,17 +213,53 @@ body {
   cursor: pointer;
   text-align: center;
   font-family: "Roboto Slab";
+  overflow: hidden;
+  transition: all 300ms ease;
 }
+
+.card:hover {
+  background-color: black;
+}
+
+/*CARDS: ICONS ANIMATION*/
+.card:hover .card__icon,
+.card:hover .card__icon--terminal-background {
+  color: #37bcf9;
+  animation: icon-fall 300ms ease-in;
+  transform: scale(1.4 , 1.4);
+}
+
+@keyframes icon-fall {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%) scale(1.4 , 1.4);
+  }
+}
+
+.card:hover .card__icon--terminal {
+  color: black;
+}
+
+/*CAMBIA SOLO EL ICONO DE TERMINAL  */
+.card:hover .card__icon--terminal-background {
+  background-color: #37bcf9;
+}
+
 .card__icon-container {
   width: 100%;
 }
+
 .card__icon {
+  display: block;
   margin-top: 30px;
   margin-bottom: 65px;
   font-size: 4em;
 }
 
-.card__icon--background {
+.card__icon--terminal-background {
+  display: block;
   background-color: black;
   width: 75px;
   height: 65px;
@@ -205,21 +271,57 @@ body {
 
 .card__icon--terminal {
   color: white;
-  font-size: 2.5em;
-  margin: 10px auto;
+  font-size: 2em;
+  margin: 15px auto ;
+  margin-left: -5px;
 }
 
 .card__category {
+  display: block;
   width: 100%;
   height: 40px;
   font-size: 20px;
   font-weight: bold;
   color: #00538c;
+  transform: all 300ms;
 }
+
+/*CARDS: CATEGORY EFFECT*/
+.card:hover .card__category {
+  color: #77b7e2;
+  animation: category-fall 400ms;
+}
+
+@keyframes category-fall {
+  from {
+    transform: translateY(-300%);
+    color: black;
+  }
+  to {
+    transform: translateY(0%);
+    color: #77b7e2;
+  }
+} 
 
 .card__description {
   color: #1d7ebe;
+  transition: all 300ms;
 }
+
+.card:hover .card__description {
+  color: white;
+  animation: description-effect 300ms ease;
+}
+
+@keyframes description-effect{
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+} 
+
 /*AJUSTE CAMPO Y LOGO SEARCH*/
 .text__search {
   display: block;
@@ -421,15 +523,21 @@ body {
   top: -15px;
 }
 
+.social__link {
+  display: block;
+  height: 32px;
+  width: 32px;
+  margin-right: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
 
 .social__logo {
   font-size: 2em;
-  margin-right: 10px;
-  cursor: pointer;
 }
 
 .social__logos--container {
-  width: 200px;
+  width: 150px;
   height: 165px;
   padding: 15px;
   margin: auto;
@@ -441,13 +549,32 @@ body {
               -2px 2px 6px #ccc;
 }
 
-.social__logos--container span {
-  display: block;
+.social-network {
+  display: flex;
+  justify-items: center;
   height: 42px;
+  width: 100px;
   text-align: left;
-  padding-left: 20px;
+  margin-left: 10px;
   line-height: 48px;
 }
+
+.overlay {
+  line-height: 36px ;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 400ms;
+  text-shadow: 0px 0px 1px #ccc;
+  border: 3px solid white;
+  box-shadow: 0px 0px 4px #ccc;
+  background-color: #F4F7FE;
+}
+
+.social-network:hover .overlay {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
 
 /*ARTICULOS*/
 .articles {
