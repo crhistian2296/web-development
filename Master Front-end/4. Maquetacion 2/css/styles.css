@@ -642,6 +642,11 @@ body {
   border-radius: 0 0 0 5px;
 }
 
+#blog__container {
+  height: 110px;
+  padding-bottom: 42px;
+}
+
 #blog {
   margin: auto;
   height:100px;
@@ -653,12 +658,53 @@ body {
   background-color: white;
   border:1px solid #ccc;
   box-shadow: 1px 1px 2px #ddd;
+  transition: all 600ms;
 }
+
+/*BLOG: CONTAINER ANIMATION*/
+#blog:hover {
+  background-color: #333;
+  border: 5px solid #37bcf9;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px gray;
+  animation: border-rainwbow 8s infinite linear;
+}
+
+@keyframes border-rainwbow {
+  0% {
+    border: 10px solid #3b85f5;
+  }
+  20% {
+    border: 10px solid #3bdd63;
+  }
+  40% {
+    border: 10px solid #d6e048;
+  }
+  60% {
+    border: 10px solid #f98537;
+  }
+  80% {
+    border: 10px solid #f5573b;
+  }
+  100% {
+    border: 10px solid #3b85f5;
+  }
+} 
 
 #blog a {
   display: block;
   color: #00538c;
+  transition: all 600ms;
   }
+
+/*BLOG: TEXT STYLE*/
+#blog:hover a {
+  color: white;
+  text-shadow: 1px 1px 1px black,
+                1px 2px 1px black,
+                1px 3px 1px black,
+                1px 4px 1px black;
+}
 
 /*FOOTER*/
 #footer {
@@ -670,9 +716,16 @@ body {
 }
 
 #footer a {
+  display: block;
   color: #37bcf9;
   transition: all 300ms;
 }
+
+/*FOOTER: MENU ANIMATION*/
+#footer a:hover {
+  padding-left: 30px;
+}
+
 #footer .wrap {
   display: flex;
   justify-content: space-evenly;
