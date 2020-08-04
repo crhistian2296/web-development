@@ -1,0 +1,65 @@
+/*articles*/
+
+@media(max-width: 1325px) {
+  .articles {
+    width: 56%;
+  }
+}
+
+.articles-section__title {
+  width: 97%;
+}
+
+
+@media(max-width: 1100px) {
+  .footer__title {
+    font-size: 30px;
+  }
+
+  .menu ul {
+    font-size: 20px;
+  }
+}
+/*tarjetas*/
+
+@media(max-width: 1060px) {
+  
+  .card__category {
+    font-size: 16px;
+  }
+
+  .card__description {
+    font-size: 12px;
+  }
+}
+/*banner*/
+
+@media(max-width: 936px) {
+  #banner h1 {
+  font-size: 30px;
+  }
+  #aside {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #footer .flex-wrap > div {
+    margin: 2%;
+  }
+}
+
+@media(max-width: 730px) {
+  #banner h1 {
+  line-height: 25px;
+  }
+}
+
+/*header-menu y articulos*/
+@media(max-width: 860px) {
+  #menu {
+    margin-right: 1%;
+  }
+  .articles {
+    width: 53%;
+  }
+}
