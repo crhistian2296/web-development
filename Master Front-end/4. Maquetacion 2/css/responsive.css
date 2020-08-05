@@ -23,13 +23,16 @@
 /*tarjetas*/
 
 @media(max-width: 1060px) {
+  .card {
+    margin: 1%;
+  }
   
   .card__category {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .card__description {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 /*banner*/
@@ -61,5 +64,126 @@
   }
   .articles {
     width: 53%;
+  }
+}
+
+@media(max-width: 804px) {
+}
+
+@media(max-width: 704px){
+  #menu li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .card__description {
+    display: none;
+  }
+
+  .card {
+    height: 214px;
+  }
+
+  .deck {
+    height: auto;
+  }
+} 
+
+@media(max-width: 770px) {
+  #footer .flex-wrap {
+    display: block;
+  }
+
+  #footer {
+    height: auto;
+  }
+
+  .menu {
+    min-width: 95%;
+  }
+
+  .location {
+    min-width: 95%;
+  }
+
+  .comunication {
+    min-width: 95%;
+  }
+}
+
+@media(max-width: 750px) {
+  #aside {
+    margin-right: 15%;
+  }
+
+  section .articles {
+    width: 90%;
+    margin-right: 5%;
+  }
+}
+@media(max-width: 572px){
+  #menu li a{
+  font-size: 20px;
+  }
+  #logo{
+    transform: scale(0.7, 0.7);
+    margin-left: 0px;
+  }
+} 
+
+
+@media(max-width: 452px) {
+  #logo {
+    clear: both;
+    float: none;
+  }
+  #header {
+    height: 140px;
+  }
+
+  #menu {
+    float: left;
+    margin-left: 22px;
+  }
+
+  .deck {
+    margin: 20px auto;
+  }
+
+  .titulo:first-child {
+    margin-top: 5px;
+  }
+}
+
+@media(max-width: 382px) {
+  #aside {
+    margin-right: 4%;
+  }
+  #banner {
+    height: auto;
+  }
+
+}
+
+@media(max-width: 405px) {
+  .article__data {
+    display: block;
+    width: 35%;
+    height: auto;
+  }
+
+  .article__title {
+    width: 50%;
+  }
+
+  .article__data span {
+    display: block;
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 360px) {
+  .articles {
+    padding-right: 2%;
   }
 }
