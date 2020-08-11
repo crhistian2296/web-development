@@ -1,0 +1,21 @@
+/*Fuente importada de google fonts: Piedra*/
+
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+h1 {
+    font-family: 'Piedra', cursive;
+    font-size: 34px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Comic Sans MS";
+    font-size: 22px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+}

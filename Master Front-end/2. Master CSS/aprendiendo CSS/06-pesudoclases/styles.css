@@ -1,0 +1,43 @@
+/*Google fonts: 'EXO 2' y 'Lora*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Lora&display=swap');
+
+/*////////////////////////////////////////////////////*/
+
+* {
+    font-family: 'Lora';
+}
+
+ul li:nth-child(odd) {
+    color: rgb(165, 87, 42);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(42, 182, 42);
+}
+
+#mi-enlace:link {
+    text-decoration: overline;
+}
+
+#mi-enlace:visited {
+    color: rgb(18, 116, 116);
+}
+
+#mi-enlace:hover {
+    text-decoration: line-through;
+    color: rgba(201, 42, 42, 0.808);
+}
+
+#mi-enlace:active {
+    color: #000;
+}
+
+input[name="campo"] {
+    display: block;
+}
+
+input[name="campo"]:focus {
+    border: 5px dashed yellowgreen;
+}

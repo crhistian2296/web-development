@@ -1,0 +1,60 @@
+$fuente-titulos:sans-serif, helvetica, Arial;
+$color-titulo-prncipal: rgb(32, 163, 49);
+$color-titlulo-secundario: black;
+$color-caja-fondo: rgb(250, 239, 89);
+$color-fondo: rgba(151, 131, 131, 0.867);
+$color-letra: rgb(114, 62, 28);
+$color-letra-oscura: rgba(20, 5, 1, 0.842);
+$size-h3: 24px;
+$size-text: 18px;
+
+body {
+  background-color: $color-fondo;
+  color: $color-letra;
+}
+
+h1 {
+  font-family: $fuente-titulos;
+  color: $color-titulo-prncipal;
+}
+
+.caja {
+  width: 20%;
+  align-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: $color-caja-fondo;
+
+  h3 {
+    color: $color-titlulo-secundario;
+    font-size: $size-h3;
+    margin: 0;
+    text-align: center;
+  }
+
+  p,
+  .info {
+    color: $color-letra-oscura;
+    font-size: $size-text;
+  }
+// ANIDACION
+  .info {
+    label{
+      display: block;
+      width: 50%;
+      text-align: center;
+      background-color: white;
+      border: 1px dotted darkolivegreen;
+      font: 1rem 'Fira Sans', sans-serif;
+    }
+    input,
+    label {
+      margin: .2rem 0;
+    }
+  }
+  .author {
+    color:  #14075e;
+    font-weight: bold;
+  }
+} 
