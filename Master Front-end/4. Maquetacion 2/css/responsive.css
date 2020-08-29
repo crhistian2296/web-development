@@ -23,24 +23,6 @@
 /*tarjetas*/
 
 @media(max-width: 1060px) {
-<<<<<<< Updated upstream
-  .card {
-    margin: 1%;
-  }
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
-  
-  .card__category {
-    font-size: 18px;
-  }
-
-  .card__description {
-<<<<<<< Updated upstream
-    font-size: 14px;
-=======
-    font-size: 12px;
-=======
   .card {
     margin: 1%;
   }
@@ -51,8 +33,6 @@
 
   .card__description {
     font-size: 14px;
->>>>>>> master
->>>>>>> Stashed changes
   }
 }
 /*banner*/
@@ -86,11 +66,6 @@
     width: 53%;
   }
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 
 @media(max-width: 804px) {
 }
@@ -156,6 +131,36 @@
   }
 } 
 
+@media(max-width: 515px){
+  .card:hover .card__icon,
+  .card:hover .card__icon--terminal-background{
+  display: none;
+  background-color: black;
+  }
+
+  .card__icon,
+  .card__icon--terminal-background {
+    text-align: center;
+    transform: scale(0.5, 0.5);
+    margin: 0px;
+  }
+
+  .card__icon-container {
+  }
+
+  .card {
+    height: 70px;
+    line-height: 0;
+  }
+
+  .card:hover {
+    background-color: white;
+  }
+
+  .card__category{
+    display: none;
+  }
+}
 
 @media(max-width: 452px) {
   #logo {
@@ -211,9 +216,4 @@
   .articles {
     padding-right: 2%;
   }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> master
->>>>>>> Stashed changes
