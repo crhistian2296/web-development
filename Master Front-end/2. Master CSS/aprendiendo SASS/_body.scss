@@ -1,3 +1,4 @@
+//VARIABLES ASIGNATION
 $color-titlulo-secundario: black;
 $color-caja-fondo: rgb(250, 239, 89);
 $color-fondo: rgba(151, 131, 131, 0.867);
@@ -6,11 +7,11 @@ $color-letra-oscura: rgba(20, 5, 1, 0.842);
 $size-h3: 24px;
 $size-text: 18px;
 
+//VARIABLES USE
 body {
     background-color: $color-fondo;
     color: $color-letra;
 }
-
 
 .caja {
     width: 20%;
@@ -33,7 +34,7 @@ body {
         font-size: $size-text;
     }
 
-    // ANIDACION
+    // ANIDATION
     .info {
         label {
             display: block;
@@ -54,4 +55,22 @@ body {
         color: #14075e;
         font-weight: bold;
     }
+}
+
+
+//MIXINS/FUNCTIONS -> PARAMETERIZED
+@mixin crearBordes($color, $radio, $pxSombra) {
+    border: 4px solid $color;
+    border-radius: $radio;
+    box-shadow: 0px 0px $pxSombra black;
+}
+
+.table {
+    margin-top: 10px;
+    background-color: #ccc;
+    @include crearBordes(rgba(12, 82, 43, 0.856), 12px, 6px);
+}
+
+.caja {
+    @include crearBordes(rgba(129, 47, 47, 0.61), 15px, 10px)
 }
