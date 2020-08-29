@@ -74,3 +74,30 @@ body {
 .caja {
     @include crearBordes(rgba(129, 47, 47, 0.61), 15px, 10px)
 }
+
+//INHERITANNCE
+%alert__normal {
+    width: 80%;
+    margin: 15px auto;
+    background-color: #eeee;
+    border: 3px solid rgb(40, 40, 148);
+    box-shadow: 0px 0px 4px black;
+    font-size: large;
+    padding-left: 10px;
+}
+
+.alert__normal {
+    @extend %alert__normal;
+}
+
+.alert__red {
+    @extend %alert__normal;
+    border-color: rgb(110, 16, 16);
+    color: rgb(110, 16, 16);
+}
+
+.alert__green {
+    @extend %alert__normal;
+    border-color: green;
+    color: green;
+}

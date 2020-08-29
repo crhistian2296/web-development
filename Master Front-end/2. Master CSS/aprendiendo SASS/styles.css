@@ -61,6 +61,27 @@ body {
           box-shadow: 0px 0px 10px black;
 }
 
+.alert__normal, .alert__red, .alert__green {
+  width: 80%;
+  margin: 15px auto;
+  background-color: #eeee;
+  border: 3px solid #282894;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+  font-size: large;
+  padding-left: 10px;
+}
+
+.alert__red {
+  border-color: #6e1010;
+  color: #6e1010;
+}
+
+.alert__green {
+  border-color: green;
+  color: green;
+}
+
 h1 {
   font-family: sans-serif, helvetica, Arial;
   color: #262e17;
