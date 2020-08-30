@@ -13,9 +13,14 @@ body {
     color: $color-letra;
 }
 
+.clearfix {
+    float: none;
+    clear: both;
+}
+
 .caja {
+    float: left;
     width: 20%;
-    align-content: center;
     margin: 0 auto;
     padding: 10px;
     border: 2px solid black;
@@ -70,9 +75,20 @@ body {
     background-color: #ccc;
     @include crearBordes(rgba(12, 82, 43, 0.856), 12px, 6px);
 }
+//OPERATORS
+
+$boxs__wrap-width: 200px;
+$box-width: 100px;
+
+.cajas {
+    width: $boxs__wrap-width;
+    height: 600px;
+    margin: 15px auto;
+}
 
 .caja {
-    @include crearBordes(rgba(129, 47, 47, 0.61), 15px, 10px)
+    @include crearBordes(rgba(129, 47, 47, 0.61), 15px, 10px);
+    width: $box-width + $boxs__wrap-width;
 }
 
 //INHERITANNCE
