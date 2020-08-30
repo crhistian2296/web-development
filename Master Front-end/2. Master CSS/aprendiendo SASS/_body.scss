@@ -117,3 +117,13 @@ $box-width: 100px;
     border-color: green;
     color: green;
 }
+
+//CONDITIONALLS
+.caja h3 {
+    @if ($color-titlulo-secundario == black) {
+        color: rgb(47, 107, 124);
+    }
+    @else {
+        color: rgb(168, 49, 49);
+    }
+}

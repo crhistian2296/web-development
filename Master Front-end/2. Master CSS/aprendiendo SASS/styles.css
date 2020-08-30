@@ -93,6 +93,10 @@ body {
   color: green;
 }
 
+.caja h3 {
+  color: #2f6b7c;
+}
+
 h1 {
   font-family: sans-serif, helvetica, Arial;
   color: #262e17;
