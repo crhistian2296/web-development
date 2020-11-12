@@ -1,0 +1,16 @@
+body {
+  background: #88c5da;
+}
+h1 {
+  font-family: Arial;
+}
+.information ul a {
+  color: #eeee;
+  font-size: 18px;
+  text-decoration: none;
+}
+.information {
+  box-shadow: 0px 0px 15px gray inset;
+  text-shadow: 0px 0px 4px black;
+  border-radius: 15px;
+}

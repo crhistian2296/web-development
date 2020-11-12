@@ -127,10 +127,9 @@ $box-width: 100px;
 }
 
 //CICLE FOR
-$contador: 1;
-
 @for $contador from 1 through 2 {
     .table ul li:nth-child(#{$contador}) {
         color: orange;
+        font-size: larger;
     }
 }

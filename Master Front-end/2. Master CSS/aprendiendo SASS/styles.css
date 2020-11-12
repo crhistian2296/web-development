@@ -99,10 +99,12 @@ body {
 
 .table ul li:nth-child(1) {
   color: orange;
+  font-size: larger;
 }
 
 .table ul li:nth-child(2) {
   color: orange;
+  font-size: larger;
 }
 
 h1 {
