@@ -18,6 +18,7 @@ body {
     clear: both;
 }
 
+//ANIDATION
 .caja {
     float: left;
     width: 20%;
@@ -39,7 +40,6 @@ body {
         font-size: $size-text;
     }
 
-    // ANIDATION
     .info {
         label {
             display: block;
@@ -62,7 +62,6 @@ body {
     }
 }
 
-
 //MIXINS/FUNCTIONS -> PARAMETERIZED
 @mixin crearBordes($color, $radio, $pxSombra) {
     border: 4px solid $color;
@@ -75,8 +74,8 @@ body {
     background-color: #ccc;
     @include crearBordes(rgba(12, 82, 43, 0.856), 12px, 6px);
 }
-//OPERATORS
 
+//OPERATORS
 $boxs__wrap-width: 200px;
 $box-width: 100px;
 
@@ -122,8 +121,16 @@ $box-width: 100px;
 .caja h3 {
     @if ($color-titlulo-secundario == black) {
         color: rgb(47, 107, 124);
-    }
-    @else {
+    } @else {
         color: rgb(168, 49, 49);
+    }
+}
+
+//CICLE FOR
+$contador: 1;
+
+@for $contador from 1 through 2 {
+    .table ul li:nth-child(#{$contador}) {
+        color: orange;
     }
 }

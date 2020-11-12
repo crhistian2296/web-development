@@ -97,6 +97,14 @@ body {
   color: #2f6b7c;
 }
 
+.table ul li:nth-child(1) {
+  color: orange;
+}
+
+.table ul li:nth-child(2) {
+  color: orange;
+}
+
 h1 {
   font-family: sans-serif, helvetica, Arial;
   color: #262e17;
