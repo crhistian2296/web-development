@@ -14,3 +14,37 @@ h1 {
   text-shadow: 0px 0px 4px black;
   border-radius: 15px;
 }
+h1 {
+  font-size: 40px;
+}
+h1 {
+  color: #07a07a;
+  color: black;
+}
+div {
+  padding: 25px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 25px;
+  text-shadow: none;
+}
+.alert-error {
+  border-color: #e8273b;
+  color: #3d060c;
+  background-color: #ED5565;
+}
+.alert-success {
+  border-color: #87c940;
+  color: #1f2f0e;
+  background-color: #A0D468;
+}
+.alert-attention {
+  border-color: #f4a911;
+  color: #362503;
+  background-color: #F6BB42;
+}
+.alert-info {
+  border-color: #2f80e7;
+  color: #082242;
+  background-color: #5D9CEC;
+}

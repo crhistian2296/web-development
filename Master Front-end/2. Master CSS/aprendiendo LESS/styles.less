@@ -2,10 +2,12 @@
 @bgcolor: rgb(136, 197, 218);
 @fuente: Arial;
 @b: body;
-@{b}{
+
+@{b} {
     background: @bgcolor;
 }
-h1{
+
+h1 {
     font-family: @fuente;
 }
 
@@ -20,7 +22,7 @@ h1{
     }
 }
 
-//MIXIN
+//MIXINS
 .shadows(@size) {
     box-shadow: 0px 0px @size gray inset;
     text-shadow: 0px 0px 4px black;
@@ -31,3 +33,56 @@ h1{
 .information {
     .shadows(15px);
 }
+
+//OPERATORS
+h1 {
+    font-size: 30px + 10px;
+}
+
+//CONDITIONAL MIXINS
+.darkText (@value) when (@value =black) {
+    color: black;
+}
+
+h1 {
+    color: rgb(7, 160, 122);
+    .darkText(black);
+}
+
+//LOOPS 
+// base styles
+div {
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 25px;
+    text-shadow: none;
+}
+
+// variables
+@colors : #ED5565,
+#A0D468,
+#F6BB42,
+#5D9CEC;
+@names : error,
+success,
+attention,
+info;
+@length : length(@colors);
+
+
+.alert-variation(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index > 0) {
+    .alert-variation(@names; @colors; (@index - 1)); // decrement.
+
+    @name : extract(@names, @index); //extraction of name and color per index
+    @color : extract(@colors, @index);
+
+    .alert-@{name} {
+        border-color: darken(@color, 10%);
+        color: darken(@color, 50%);
+        background-color: @color;
+    }
+
+}
+
+.alert-variation(@names; @colors; @length);
