@@ -1,0 +1,46 @@
+@media (max-width: 1734px) {
+    .menu {
+        flex-basis: 100%;
+        margin-left: 40px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1070px) {
+    #content {
+        flex-direction: column;
+    }
+
+    aside {
+        margin: 0px auto;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #projects__deck {
+        margin: auto;
+    }
+
+    .project {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer #author {
+        text-align: center;
+        margin: 0px;
+        padding: 20px;
+    }
+}
