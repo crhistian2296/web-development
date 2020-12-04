@@ -2,6 +2,131 @@ body {
     text-align: center;
 }
 
+#gridArea {
+    display: grid;
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas:
+        "cabecera cabecera cabecera cabecera cabecera"
+        "menu menu menu menu menu"
+        "barraLateral contenido contenido contenido contenido"
+        "pie pie pie pie pie ";
+}
+
+#cabecera {
+    grid-area: cabecera;
+    background-color: blue;
+    color: white;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#menu--options {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#content {
+    grid-area: contenido;
+    display: grid;
+    padding: 20px;
+    background-color: #eee;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+#content article {
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#barraLateral {
+    grid-area: barraLateral;
+    background-color: orange;
+    color: white;
+}
+
+#pie {
+    grid-area: pie;
+    background-color: black;
+    color: white;
+}
+
+/* =================================================================================== */
+
+.website {
+    display: grid;
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    grid-column: 1 / 6;
+}
+
+.menu {
+    background-color: lightblue;
+    color: black;
+    grid-column: 1 / 6;
+    line-height: 70px;
+}
+
+.menu--options {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.content {
+    display: grid;
+    padding: 20px;
+    background-color: #eee;
+    grid-column: 1 / 5;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.content article {
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+aside {
+    background-color: orange;
+    color: white;
+    grid-column: 5 / 6;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    grid-column: 1 / 6;
+}
+
+/* =================================================================================== */
 .layout {
     width: 80%;
     margin: auto;
