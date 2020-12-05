@@ -1,0 +1,50 @@
+@media (max-width: 1440px) {
+    header {
+        grid-template-columns: 100%;
+    }
+
+    .logo h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1240px) {
+    footer {
+        grid-template-columns: 100%;
+    }
+
+    .logo__footer {
+        text-align: center;
+    }
+
+    footer #author {
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 830px) {
+    #content {
+        grid-template-columns: 100%;
+    }
+
+    #projects__deck {
+        justify-content: center;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 630px) {
+    #projects__deck {
+        grid-template-columns: 1fr;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
