@@ -5,3 +5,19 @@
 #menu ul {
     line-height: 30px;
 }
+
+.item {
+    height: 90px;
+}
+
+footer {
+    height: 40px;
+    line-height: 40px;
+}
+
+.lateral {
+    height: 200px;
+}
+.lateral > .item {
+    height: calc(200px / 3);
+}

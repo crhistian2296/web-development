@@ -17,6 +17,7 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="mobile.css" />
     </head>
     <body>
         <!-- <div class="myWeb p-5 border w-75 m-auto">
@@ -34,13 +35,112 @@
                     <h1>Aprendiendo Bootstrap con Victor Robles</h1>
                 </header>
                 <nav id="menu" class="col-12 bg-secondary text-white">
-                    <ul class="row w-50 list-unstyled">
-                        <li class="col">Pagina 1</li>
-                        <li class="col">Pagina 2</li>
-                        <li class="col">Pagina 3</li>
-                        <li class="col">Contactos</li>
+                    <ul id="loco" class="row w-50 list-unstyled">
+                        <li class="col-12 col-sm">Pagina 1</li>
+                        <li class="col-12 col-sm">Pagina 2</li>
+                        <li class="col-12 col-sm">Pagina 3</li>
+                        <li class="col-12 col-sm">Contactos</li>
                     </ul>
                 </nav>
+                <section id="content" class="col-12">
+                    <div class="row">
+                        <section id="products" class="col-9 border">
+                            <h2>Prductos</h2>
+                            <hr />
+                            <div class="row">
+                                <div class="item col bg-primary m-3 text-white">
+                                    alerta azul
+                                </div>
+                                <div class="item col bg-warning m-3 text-white">
+                                    alerta amarilla
+                                </div>
+                                <div class="item col bg-danger m-3 text-white">
+                                    alerta roja
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div
+                                    class="item col-1 col-sm-2 col-lg-3 col-xl-6 bg-primary text-white"
+                                >
+                                    alerta azul
+                                </div>
+                                <div
+                                    class="item col-1 col-sm-2 col-lg-3 col-xl-2 bg-warning text-white"
+                                >
+                                    alerta amarilla
+                                </div>
+                                <div
+                                    class="item col-1 col-sm-2 col-lg-3 col-xl-4 bg-danger text-white"
+                                >
+                                    alerta roja
+                                </div>
+                                <div
+                                    class="item col-1 col-sm-2 col-lg-3 col-xl-12 bg-success text-white"
+                                >
+                                    alerta verde
+                                </div>
+                            </div>
+                            <div class="row justify-content-around">
+                                <div
+                                    class="item col-3 bg-primary m-3 text-white"
+                                >
+                                    alerta azul
+                                </div>
+                                <div
+                                    class="item col-3 bg-warning m-3 text-white"
+                                >
+                                    alerta amarilla
+                                </div>
+                                <div
+                                    class="item col-3 bg-danger m-3 text-white"
+                                >
+                                    alerta roja
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item col-3 bg-primary text-white">
+                                    alerta azul
+                                </div>
+                                <div
+                                    class="item col-2 bg-warning text-white offset-1"
+                                >
+                                    alerta amarilla
+                                </div>
+                                <div class="item col-3 bg-danger text-white">
+                                    alerta roja
+                                </div>
+                                <div
+                                    class="item col-2 bg-success text-white offset-1"
+                                >
+                                    alerta verde
+                                </div>
+                            </div>
+                        </section>
+                        <aside class="col border">
+                            <h2>Barra lateral</h2>
+                            <div class="lateral row bg-light align-items-end">
+                                <div
+                                    class="item col bg-success text-white align-self-start order-2"
+                                >
+                                    caja 1
+                                </div>
+                                <div
+                                    class="item col bg-danger text-white align-self-center order-1"
+                                >
+                                    caja 2
+                                </div>
+                                <div
+                                    class="item col bg-warning text-white order-3"
+                                >
+                                    caja 3
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+                <footer class="col bg-info h-2 text-white">
+                    Pie de pagina
+                </footer>
             </div>
         </div>
 
