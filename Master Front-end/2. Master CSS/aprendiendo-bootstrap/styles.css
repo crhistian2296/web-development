@@ -1,0 +1,10 @@
+.slide {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    height: 90%;
+    width: 100%;
+}

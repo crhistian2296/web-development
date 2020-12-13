@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aprendiendo a usar componentes</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/6c57fa4615.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container col">
+        <nav class="navbar navbar-expand-lg mt-3 navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Components</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <div class="row col-12 col-lg">
+                    <div class="navbar-nav ml-3 mt-2 mt-lg-0 float-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+
+                <form class="form-inline ml-2 my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+                <li class="nav-item dropdown list-inline mx-2 my-auto">
+                    <a class="nav-link dropdown-toggle badge-success rounded badge-*" href="#" id="dropdownId"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Crhistian</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </div>
+        </nav>
+
+        <div class="container m-0 mt-3 col-10 col-sm-11">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb list-inline">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Lenguages</a></li>
+                        <li class="breadcrumb-item active">Python</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Inicio carousel-->
+
+            <div id="carouselId" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselId" data-slide-to="1"></li>
+                    <li data-target="#carouselId" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active w-100">
+                        <img src="img\1920x1080-px-and-ART-black-blue-computers-1741123-wallhere.com.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item w-100">
+                        <img src="img\1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere.com.jpg">
+                    </div>
+                    <div class="carousel-item w-100">
+                        <img src="img\Rick-and-Morty-Run-the-Jewels-vector-graphics-1277133-wallhere.com.jpg">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--Fin carousel-->
+
+            <div class="row">
+                <div class="alert alert-success alert-dismissible align-self-start fade show col-md-8" role="alert">
+                    <h4 class="alert-heading"></h4>
+                    <strong>¡¡Salió!!</strong> por fin puedo ir a dormir
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row col p-0">
+                <div class="card p-0 m-2 text-left">
+                    <img class="card-img-top " src="https://via.placeholder.com/300x200" alt="holder 150x150">
+                    <div class="card-body">
+                        <h4 class="card-title">Hello</h4>
+                        <p class="card-text">hola pendejos era yo todo el tiempo</p>
+                        <a name="" id="" class="btn btn-info" href="#" role="button">Entrar</a>
+                    </div>
+                </div>
+                <div class="card p-0 m-2 text-left">
+                    <img class="card-img-top " src="https://via.placeholder.com/300x200" alt="holder 150x150">
+                    <div class="card-body">
+                        <h4 class="card-title">Hello</h4>
+                        <p class="card-text">hola pendejos era yo todo el tiempo</p>
+                        <a name="" id="" class="btn btn-info" href="#" role="button">Entrar</a>
+                    </div>
+                </div>
+                <div class="card p-0 m-2 text-left">
+                    <img class="card-img-top " src="https://via.placeholder.com/300x200" alt="holder 150x150">
+                    <div class="card-body">
+                        <h4 class="card-title">Hello</h4>
+                        <p class="card-text">hola pendejos era yo todo el tiempo</p>
+                        <a name="" id="" class="btn btn-info" href="#" role="button">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".slide").carousel({
+                interaval: 2000
+            });
+        });
+    </script>
+
+</body>
+
+</html>
