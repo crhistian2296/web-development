@@ -188,6 +188,106 @@
                 </div>
             </div>
 
+            <!--Forms-->
+            <form>
+                <!--Nombre completo y email-->
+                <div class="row col rounded bg-secondary">
+                    <div class="form-group col-6 col-lg-3">
+                        <label for="Nombre" class="text-white">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Introzuca su nombre">
+                    </div>
+                    <div class="form-group col-6 col-lg">
+                        <label for="Apellido1" class="text-white">Apellido 1</label>
+                        <input type="text" name="Apellido1" id="Apellido1" class="form-control"
+                            placeholder="Introzuca su primer apellido">
+                    </div>
+                    <div class="form-group col-6 col-lg">
+                        <label for="Apellido2" class="text-white">Apellido 2</label>
+                        <input type="text" name="Apellido2" id="Apellido2" class="form-control"
+                            placeholder="Introzuca su segundo apellido">
+                    </div>
+                    <div class="form-group col-6 col-lg">
+                        <label for="emailID" class="text-white">Email</label>
+                        <input type="email" name="emailID" id="emailID" class="form-control" placeholder="introduzca su email">
+                    </div>
+                </div>
+
+                <!--Localizacion y movil-->
+                <div class="row col bg-light rounded">
+                    <div class="form-group col-6 col-lg">
+                        <label for="pais">Pais</label>
+                        <input type="text" name="pais" id="pais" class="form-control" placeholder="Introduzca su pais">
+                    </div>
+                    <div class="form-group col-6 col-lg">
+                        <label for="departamento">Departamento</label>
+                        <input type="text" name="departamento" id="departamento" class="form-control"
+                            placeholder="Introduzca su departamento o comunidad">
+                    </div>
+                    <div class="form-group col-6 col-lg">
+                        <label for="localidad">Localidad</label>
+                        <input type="text" name="localidad" id="localidad" class="form-control"
+                            placeholder="Introduzca su localidad o municipio">
+                    </div>
+                    <div class="form-group col-6 col-lg">
+                        <label for="movil">Movil</label>
+                        <input type="number" name="movil" id="movil" class="form-control"
+                            placeholder="Introduzca su numero de movil">
+                    </div>
+                </div>
+
+                <!--Genero, clave y submit-->
+                <div class="row col bg-secondary rounded">
+                    <div class="form-group col-md-3 col-sm-12 mb-0 mt-3">
+                        <label for="genero" class="text-white">Genero</label>
+                        <select class="form-control" name="genero" id="genero">
+                            <option>Elija una opcion</option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                            <option>Otro LGBTIQ</option>
+                        </select>
+                    </div>
+                    <div class="input-group col-md-3 col mt-3">
+                        <div class="input-group-prepend m-1">
+                            <span class="input-group-text">Clave de su preoceso prepend</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
+                                placeholder="Introduzca la clave">
+                            <small id="helpId" class="form-text text-muted">La enviada a su correo</small>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success m-3" value="enviar">Enviar</button>
+            </form>
+
+            <!--Table-->
+            <table class="table table-striped table-dark table-bordered table-hover m-3">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Juan</td>
+                        <td>Galindo</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Marcos</td>
+                        <td>Santan</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Lina</td>
+                        <td>Caicedo</td>
+                        <td>29</td>
+                    </tr>
+                </tbody>
+            </table>
+
             <!--Progress bar-->
             <div class="row mb-3">
                 <h3 class="col-12 ml-3 mb-0"><u>Progress bar</u></h3>
@@ -209,6 +309,26 @@
                         }, 1000);
                     </script>
                 </div>
+            </div>
+
+            <!--Tooltip-->
+            <div class="row col">
+                <button type="button" class="btn btn-tool btn-secondary m-3 mt-0" data-toggle="tooltip" data-placement="top"
+                    title="Tooltip desde arriba">
+                    Tooltip 1
+                </button>
+                <button type="button" class="btn btn-tool btn-info m-3 mt-0" data-toggle="tooltip" data-placement="left"
+                    title="Tooltip desde arriba">
+                    Tooltip 2
+                </button>
+                <button type="button" class="btn btn-tool btn-primary m-3 mt-0" data-toggle="tooltip" data-placement="right"
+                    title="Tooltip desde arriba">
+                    Tooltip 3
+                </button>
+                <button type="button" class="btn btn-pop btn-warning m-3 mt-0" data-toggle="pop" data-container="body"
+                    data-content="Esto es un pop-over" title="hola" data-content="Popup content">
+                    Pop-over
+                </button>
             </div>
 
             <!--Alert-->
@@ -290,6 +410,9 @@
             $(".slide").carousel({
                 interaval: 2000
             });
+
+            $(".btn-tool").tooltip();
+            $(".btn-pop").popover();
         });
     </script>
 
